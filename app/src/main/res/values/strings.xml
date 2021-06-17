@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Dog’s Lunch</string>
+    <string name="app_name" translatable="false">Dog’s Lunch</string>
+    <string name="information_about_element" translatable="false">Информация об элементе</string>
 </resources>
