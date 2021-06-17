@@ -6,15 +6,19 @@ import java.util.List;
 public class DummyContent {
     /** Списочный массив элементов */
     public static final List<DummyItem> ITEMS = new ArrayList<DummyItem>();
-    private static final int COUNT = 50;
 
     static {
-        // Добавление элементов в список.
-        for (int k = 1; k <= COUNT; k++) {
-            StringBuilder builder = new StringBuilder();
-            for (int j = 0; j < k; j++) { builder.append("\n Детальная информация. "); }
-            ITEMS.add(new DummyItem(String.valueOf(k), "Элемент " + k, builder.toString()));
-        }
+
+        StringBuilder builder = new StringBuilder();
+        ITEMS.add(new DummyItem(String.valueOf(1), "Блюда из курицы" , builder.toString()));
+        builder.append("\n Детальная информация. ");
+        ITEMS.add(new DummyItem(String.valueOf(2), "Блюда из говядины" , builder.toString()));
+        builder.append("\n Детальная информация. ");
+        ITEMS.add(new DummyItem(String.valueOf(3), "Блюда из свинины" , builder.toString()));
+        builder.append("\n Детальная информация. ");
+        ITEMS.add(new DummyItem(String.valueOf(4), "Блюда из рыбы" , builder.toString()));
+        builder.append("\n Детальная информация. ");
+        ITEMS.add(new DummyItem(String.valueOf(4), "Только овощи" , builder.toString()));
     }
 
     /** Создание класса элементов для списка. */
