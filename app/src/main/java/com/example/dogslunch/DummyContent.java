@@ -10,14 +10,15 @@ public class DummyContent {
     static {
 
         StringBuilder builder = new StringBuilder();
+
         ITEMS.add(new DummyItem(String.valueOf(1), "Блюда из курицы" , builder.toString()));
-        builder.append("\n Детальная информация. ");
+
         ITEMS.add(new DummyItem(String.valueOf(2), "Блюда из говядины" , builder.toString()));
-        builder.append("\n Детальная информация. ");
+
         ITEMS.add(new DummyItem(String.valueOf(3), "Блюда из свинины" , builder.toString()));
-        builder.append("\n Детальная информация. ");
+
         ITEMS.add(new DummyItem(String.valueOf(4), "Блюда из рыбы" , builder.toString()));
-        builder.append("\n Детальная информация. ");
+
         ITEMS.add(new DummyItem(String.valueOf(4), "Только овощи" , builder.toString()));
     }
 
